@@ -1,4 +1,4 @@
-# Proyecto Aula 0.8
+# Proyecto Aula 0.9
 
 Versión de arquitectura modular preparada para funcionar directamente en GitHub Pages.
 
@@ -33,4 +33,4 @@ Mantener:
 - Folder: `/(root)`
 
 ## Prioridad
-6G y 7G. En 0.8, 6G Primer Semestre A funciona como bloque modelo y 7G queda ya conectado a la misma arquitectura.
+6G y 7G. En 0.9, 6G Primer Semestre A funciona como bloque modelo y 7G queda ya conectado a la misma arquitectura.
