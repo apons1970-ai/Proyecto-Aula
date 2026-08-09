@@ -1,19 +1,36 @@
-# Proyecto Aula 0.6
+# Proyecto Aula 0.8
 
-Versión preparada para GitHub Pages.
+Versión de arquitectura modular preparada para funcionar directamente en GitHub Pages.
 
-## Esta versión incluye
-- Estructura completa de 6G y 7G en cuatro bloques.
-- Contenido curricular real de los bloques definidos.
-- Actividades funcionales en 7G Primer Semestre B, Segundo Semestre A y Segundo Semestre B.
-- Autocorrección.
-- Puntos según dificultad.
-- Repaso acumulativo.
-- Actividades ⭐ extra para avanzados.
-- Interfaz más compacta: clase y semestre con mayor jerarquía; actividades con menor peso visual.
+## Qué cambia respecto a 0.7
+- No requiere compilación ni Vite para publicarse.
+- GitHub Pages puede seguir usando `main` + `/(root)`.
+- La aplicación está separada en módulos, no en un HTML monolítico.
+- `src/data/` contiene el contenido/currículo.
+- `src/ui/` contiene el motor reutilizable de actividades.
+- `src/styles/` contiene el diseño estable.
+- `src/app.js` gestiona navegación y vistas.
+- La zona de profesora ya existe como capa independiente de la vista del alumno.
+
+## Estructura
+```
+index.html
+src/
+  app.js
+  data/
+    catalog.js
+    course6G.js
+  ui/
+    activityEngine.js
+  styles/
+    app.css
+```
 
 ## GitHub Pages
-Sube estos cinco archivos directamente a la raíz del repositorio:
-`index.html`, `styles.css`, `app.js`, `data.js`, `README.md`.
+Mantener:
+- Source: `Deploy from a branch`
+- Branch: `main`
+- Folder: `/(root)`
 
-No subas la carpeta completa: los archivos deben quedar directamente en la raíz.
+## Prioridad
+6G y 7G. En 0.8, 6G Primer Semestre A funciona como bloque modelo y 7G queda ya conectado a la misma arquitectura.
